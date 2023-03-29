@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">MyPagination</string>
+    <string name="retry">Retry</string>
+</resources>
