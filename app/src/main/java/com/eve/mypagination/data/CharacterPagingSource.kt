@@ -26,7 +26,7 @@ class CharacterPagingSource(
             val responseData = response.body()?.results ?: emptyList()
             LoadResult.Page(
                 data = responseData,
-                prevKey = if (page == 1) null else page - 1,
+                prevKey = if (page == INITIAL_PAGE_INDEX) null else page - 1,
                 nextKey = if (responseData.isEmpty()) null else page + 1
             )
         } catch (e: Exception) {
